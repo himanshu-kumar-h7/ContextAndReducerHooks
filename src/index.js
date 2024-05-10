@@ -1,13 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { CountContextProvider } from "./Component/CountContext";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <CountContextProvider  value={{name : 'Himanshu' ,
+       surname : "Kumar",
+       age : 28,
+       email : 'monu.com89@gmail.com',
+       address : 'Naksha Atlantis',
+    }} >
+      <App />
+    </CountContextProvider>
   </React.StrictMode>
 );
 
