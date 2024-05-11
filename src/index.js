@@ -3,19 +3,24 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { CountContextProvider } from "./Component/CountContext";
-
+import { DetailsContextProvider } from "./Component/DetailsContext";
+import { CounterContextProvider } from "./Component/CounterContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <CountContextProvider  value={{name : 'Himanshu' ,
-       surname : "Kumar",
-       age : 28,
-       email : 'monu.com89@gmail.com',
-       address : 'Naksha Atlantis',
-    }} >
-      <App />
-    </CountContextProvider>
+    <DetailsContextProvider
+      value={{
+        name : "Himanshu",
+        surname: "Kumar",
+        age: 28,
+        email: "monu.com89@gmail1.com",
+        address: "Naksha Atlantis",
+      }}
+    >
+      <CounterContextProvider value={100}>
+        <App />
+      </CounterContextProvider>
+    </DetailsContextProvider>
   </React.StrictMode>
 );
 
