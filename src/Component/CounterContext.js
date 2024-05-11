@@ -1,7 +1,8 @@
 import { createContext } from "react";
+import ReducerExample from "./ReducerExample";
 
 const CounterContext = createContext( {
-    Count : 1,
+   
 })
 
 export const CounterContextProvider = CounterContext.Provider
