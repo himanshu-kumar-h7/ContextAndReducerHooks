@@ -7,7 +7,7 @@ import { DetailsContextProvider } from "./Component/DetailsContext";
 import { CounterContextProvider } from "./Component/CounterContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <>
     <DetailsContextProvider
       value={{
         name : "Himanshu",
@@ -21,7 +21,7 @@ root.render(
         <App />
       </CounterContextProvider>
     </DetailsContextProvider>
-  </React.StrictMode>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function
