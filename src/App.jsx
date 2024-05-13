@@ -14,7 +14,8 @@ import "./App.css";
 // import { useState } from "react";
 // import FetchingUsingAxiosUseState from './UseStateHook/FetchingUsingAxiosUseState'
 // import FetchingUsingAxiosUseReducer from "./UseStateHook/FetchingUsingAxiosUseReducer";
-import Parent from "./ExampleForuseCallback.jsx/Parent";
+// import Parent from "./ExampleForuseCallback.jsx/Parent";
+import A from './CustomHookExample.jsx/A'
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
       {/* ------------------------------------------------------------------------------- */}
 
       {/* <MousePosition /> */}
-      <Parent />
+      {/* <Parent /> */}
+      <A />
     </>
   );
 }
